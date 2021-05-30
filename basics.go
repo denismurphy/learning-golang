@@ -7,23 +7,23 @@ import ( // cleaner style
 )
 
 const (
-	consttest string = "this is a const"
+	constTest string = "this is a const"
 )
 
 var (
-	vartest  string = "this is a var set in var block"
-	var2test string
+	varTest string = "this is a var set in var block"
+	var2Test string
 )
 
 func init() {
-	vartest = "this is a var set from init"
-	var2test = "hi from init"
+	varTest = "this is a var set from init"
+	var2Test = "hi from init"
 }
 
 func main() {
-	fmt.Println(consttest)
-	fmt.Println(vartest)
-	fmt.Println(var2test)
-	var2test = "now it set from inside the function"
-	fmt.Println(var2test)
+	fmt.Println(constTest)
+	fmt.Println(varTest)
+	fmt.Println(var2Test)
+	var2Test = "now it set from inside the function"
+	fmt.Println(var2Test)
 }
